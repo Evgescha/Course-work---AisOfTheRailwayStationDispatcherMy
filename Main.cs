@@ -57,17 +57,17 @@ namespace AisOfTheRailwayStationDispatcherMy
         //сотрудники
         private void button8_Click(object sender, EventArgs e)
         {
-
+            showEmployee();
         }
         //должности
         private void button9_Click(object sender, EventArgs e)
         {
-
+            showPosition();
         }
         //клиенты
         private void button10_Click(object sender, EventArgs e)
         {
-
+            showClient();
         }
         private void showArea() {
             this.Hide();
@@ -87,6 +87,21 @@ namespace AisOfTheRailwayStationDispatcherMy
         {
             this.Hide();
             new Train().Show();
+        }
+        private void showPosition()
+        {
+            this.Hide();
+            new Position().Show();
+        }
+        private void showEmployee()
+        {
+            //this.Hide();
+            //new Employee().Show();
+        }
+        private void showClient()
+        {
+            //this.Hide();
+            //new Client().Show();
         }
     }
 }
