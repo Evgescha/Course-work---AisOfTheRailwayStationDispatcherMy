@@ -848,7 +848,7 @@ namespace AisOfTheRailwayStationDispatcherMy {
                 this.columnКод.AutoIncrement = true;
                 this.columnКод.AutoIncrementSeed = -1;
                 this.columnКод.AutoIncrementStep = -1;
-                this.columnКод.AllowDBNull = false;
+                this.columnКод.AllowDBNull = true;
                 this.columnКод.Unique = true;
                 this.columnНомер.MaxLength = 10;
             }
@@ -1138,7 +1138,7 @@ namespace AisOfTheRailwayStationDispatcherMy {
                 this.columnКод.AutoIncrement = true;
                 this.columnКод.AutoIncrementSeed = -1;
                 this.columnКод.AutoIncrementStep = -1;
-                this.columnКод.AllowDBNull = false;
+                this.columnКод.AllowDBNull = true;
                 this.columnКод.Unique = true;
                 this.columnНазвание.MaxLength = 30;
                 this.columnОписание.MaxLength = 255;
@@ -1460,7 +1460,7 @@ namespace AisOfTheRailwayStationDispatcherMy {
                 this.columnКод.AutoIncrement = true;
                 this.columnКод.AutoIncrementSeed = -1;
                 this.columnКод.AutoIncrementStep = -1;
-                this.columnКод.AllowDBNull = false;
+                this.columnКод.AllowDBNull = true;
                 this.columnКод.Unique = true;
                 this.columnНазвание_рейса.MaxLength = 60;
             }
@@ -1719,8 +1719,9 @@ namespace AisOfTheRailwayStationDispatcherMy {
                 base.Columns.Add(this.columnНазвание_области);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnНазвание_области}, true));
-                this.columnНазвание_области.AllowDBNull = false;
+                this.columnНазвание_области.AllowDBNull = true;
                 this.columnНазвание_области.Unique = true;
+                this.columnНазвание_области.DefaultValue = ((string)(""));
                 this.columnНазвание_области.MaxLength = 255;
             }
             
@@ -2065,7 +2066,7 @@ namespace AisOfTheRailwayStationDispatcherMy {
                 this.columnКод.AutoIncrement = true;
                 this.columnКод.AutoIncrementSeed = -1;
                 this.columnКод.AutoIncrementStep = -1;
-                this.columnКод.AllowDBNull = false;
+                this.columnКод.AllowDBNull = true;
                 this.columnКод.Unique = true;
                 this.columnФамилия.MaxLength = 30;
                 this.columnИмя.MaxLength = 30;
@@ -2374,7 +2375,7 @@ namespace AisOfTheRailwayStationDispatcherMy {
                 this.columnКод.AutoIncrement = true;
                 this.columnКод.AutoIncrementSeed = -1;
                 this.columnКод.AutoIncrementStep = -1;
-                this.columnКод.AllowDBNull = false;
+                this.columnКод.AllowDBNull = true;
                 this.columnКод.Unique = true;
                 this.columnМодель.MaxLength = 20;
             }
@@ -2681,7 +2682,7 @@ namespace AisOfTheRailwayStationDispatcherMy {
                 this.columnКод.AutoIncrement = true;
                 this.columnКод.AutoIncrementSeed = -1;
                 this.columnКод.AutoIncrementStep = -1;
-                this.columnКод.AllowDBNull = false;
+                this.columnКод.AllowDBNull = true;
                 this.columnКод.Unique = true;
                 this.columnНазвание.MaxLength = 30;
                 this.columnАдрес.MaxLength = 255;
@@ -2993,7 +2994,7 @@ namespace AisOfTheRailwayStationDispatcherMy {
                 this.columnКод.AutoIncrement = true;
                 this.columnКод.AutoIncrementSeed = -1;
                 this.columnКод.AutoIncrementStep = -1;
-                this.columnКод.AllowDBNull = false;
+                this.columnКод.AllowDBNull = true;
                 this.columnКод.Unique = true;
             }
             
@@ -3268,7 +3269,7 @@ namespace AisOfTheRailwayStationDispatcherMy {
                 base.Columns.Add(this.columnОбласть);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnНазвание_района}, true));
-                this.columnНазвание_района.AllowDBNull = false;
+                this.columnНазвание_района.AllowDBNull = true;
                 this.columnНазвание_района.Unique = true;
                 this.columnНазвание_района.MaxLength = 255;
                 this.columnОбласть.MaxLength = 255;
@@ -3618,7 +3619,7 @@ namespace AisOfTheRailwayStationDispatcherMy {
                 this.columnКод.AutoIncrement = true;
                 this.columnКод.AutoIncrementSeed = -1;
                 this.columnКод.AutoIncrementStep = -1;
-                this.columnКод.AllowDBNull = false;
+                this.columnКод.AllowDBNull = true;
                 this.columnКод.Unique = true;
                 this.columnФамилия.MaxLength = 30;
                 this.columnИмя.MaxLength = 30;
@@ -7358,7 +7359,7 @@ namespace AisOfTheRailwayStationDispatcherMy.dbDataSetTableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
         public virtual int Delete(string p1) {
             if ((p1 == null)) {
-                throw new global::System.ArgumentNullException("p1");
+                this.Adapter.DeleteCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(p1));
@@ -7385,7 +7386,7 @@ namespace AisOfTheRailwayStationDispatcherMy.dbDataSetTableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
         public virtual int Insert(string p1) {
             if ((p1 == null)) {
-                throw new global::System.ArgumentNullException("p1");
+                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((string)(p1));
@@ -7412,13 +7413,13 @@ namespace AisOfTheRailwayStationDispatcherMy.dbDataSetTableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(string p1, string p2) {
             if ((p1 == null)) {
-                throw new global::System.ArgumentNullException("p1");
+                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(p1));
             }
             if ((p2 == null)) {
-                throw new global::System.ArgumentNullException("p2");
+                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(p2));

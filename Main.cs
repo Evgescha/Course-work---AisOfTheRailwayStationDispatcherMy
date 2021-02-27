@@ -12,9 +12,12 @@ namespace AisOfTheRailwayStationDispatcherMy
 {
     public partial class Main : Form
     {
+        public static Main main;
+
         public Main()
         {
             InitializeComponent();
+            main = this;
         }
         //продажа билетов
         private void button1_Click(object sender, EventArgs e)
@@ -29,12 +32,12 @@ namespace AisOfTheRailwayStationDispatcherMy
         //области
         private void button3_Click(object sender, EventArgs e)
         {
-
+            showArea();
         }
         //районы
         private void button4_Click(object sender, EventArgs e)
         {
-
+            showRegion();
         }
         //пункты назначения
         private void button5_Click(object sender, EventArgs e)
@@ -65,6 +68,15 @@ namespace AisOfTheRailwayStationDispatcherMy
         private void button10_Click(object sender, EventArgs e)
         {
 
+        }
+        private void showArea() {
+            this.Hide();
+            new Area().Show();
+        }
+        private void showRegion()
+        {
+            this.Hide();
+            new Region().Show();
         }
     }
 }
