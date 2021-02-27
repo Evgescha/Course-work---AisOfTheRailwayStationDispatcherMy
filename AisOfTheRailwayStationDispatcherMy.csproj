@@ -90,6 +90,12 @@
     <Compile Include="Region.Designer.cs">
       <DependentUpon>Region.cs</DependentUpon>
     </Compile>
+    <Compile Include="Train.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Train.Designer.cs">
+      <DependentUpon>Train.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Area.resx">
       <DependentUpon>Area.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +117,9 @@
     </Compile>
     <EmbeddedResource Include="Region.resx">
       <DependentUpon>Region.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Train.resx">
+      <DependentUpon>Train.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="dbDataSet.xsc">
       <DependentUpon>dbDataSet.xsd</DependentUpon>

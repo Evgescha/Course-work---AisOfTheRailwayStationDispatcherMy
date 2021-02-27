@@ -52,7 +52,7 @@ namespace AisOfTheRailwayStationDispatcherMy
         //поезда
         private void button7_Click(object sender, EventArgs e)
         {
-
+            showTrain();
         }
         //сотрудники
         private void button8_Click(object sender, EventArgs e)
@@ -82,6 +82,11 @@ namespace AisOfTheRailwayStationDispatcherMy
         {
             this.Hide();
             new Point().Show();
+        }
+        private void showTrain()
+        {
+            this.Hide();
+            new Train().Show();
         }
     }
 }
