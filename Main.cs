@@ -100,8 +100,8 @@ namespace AisOfTheRailwayStationDispatcherMy
         }
         private void showClient()
         {
-            //this.Hide();
-            //new Client().Show();
+            this.Hide();
+            new Client().Show();
         }
     }
 }
