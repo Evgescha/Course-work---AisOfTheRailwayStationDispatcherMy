@@ -95,8 +95,8 @@ namespace AisOfTheRailwayStationDispatcherMy
         }
         private void showEmployee()
         {
-            //this.Hide();
-            //new Employee().Show();
+            this.Hide();
+            new Employee().Show();
         }
         private void showClient()
         {
