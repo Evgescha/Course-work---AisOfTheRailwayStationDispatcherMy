@@ -42,7 +42,7 @@ namespace AisOfTheRailwayStationDispatcherMy
         //пункты назначения
         private void button5_Click(object sender, EventArgs e)
         {
-
+            showPoint();
         }
         //маршруты
         private void button6_Click(object sender, EventArgs e)
@@ -77,6 +77,11 @@ namespace AisOfTheRailwayStationDispatcherMy
         {
             this.Hide();
             new Region().Show();
+        }
+        private void showPoint()
+        {
+            this.Hide();
+            new Point().Show();
         }
     }
 }

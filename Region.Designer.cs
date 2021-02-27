@@ -50,7 +50,6 @@ namespace AisOfTheRailwayStationDispatcherMy
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.районыibfk1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.районыTableAdapter = new AisOfTheRailwayStationDispatcherMy.dbDataSetTableAdapters.районыTableAdapter();
             this.bindingNavigator2 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem1 = new System.Windows.Forms.ToolStripButton();
@@ -65,6 +64,7 @@ namespace AisOfTheRailwayStationDispatcherMy
             this.bindingNavigatorAddNewItem1 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem1 = new System.Windows.Forms.ToolStripButton();
             this.сохранитьToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.районыibfk1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.названиеРайонаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.областьDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
@@ -75,9 +75,9 @@ namespace AisOfTheRailwayStationDispatcherMy
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.районыibfk1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).BeginInit();
             this.bindingNavigator2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.районыibfk1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -212,7 +212,6 @@ namespace AisOfTheRailwayStationDispatcherMy
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -269,11 +268,6 @@ namespace AisOfTheRailwayStationDispatcherMy
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(471, 227);
             this.dataGridView2.TabIndex = 0;
-            // 
-            // районыibfk1BindingSource
-            // 
-            this.районыibfk1BindingSource.DataMember = "районы_ibfk_1";
-            this.районыibfk1BindingSource.DataSource = this.областиBindingSource;
             // 
             // районыTableAdapter
             // 
@@ -336,7 +330,6 @@ namespace AisOfTheRailwayStationDispatcherMy
             // 
             this.bindingNavigatorPositionItem1.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem1.AutoSize = false;
-            this.bindingNavigatorPositionItem1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem1.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem1.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem1.Text = "0";
@@ -405,6 +398,11 @@ namespace AisOfTheRailwayStationDispatcherMy
             this.сохранитьToolStripButton.Text = "&Сохранить";
             this.сохранитьToolStripButton.Click += new System.EventHandler(this.сохранитьToolStripButton_Click);
             // 
+            // районыibfk1BindingSource
+            // 
+            this.районыibfk1BindingSource.DataMember = "районы_ibfk_1";
+            this.районыibfk1BindingSource.DataSource = this.областиBindingSource;
+            // 
             // названиеРайонаDataGridViewTextBoxColumn
             // 
             this.названиеРайонаDataGridViewTextBoxColumn.DataPropertyName = "Название района";
@@ -416,6 +414,7 @@ namespace AisOfTheRailwayStationDispatcherMy
             this.областьDataGridViewTextBoxColumn.DataPropertyName = "Область";
             this.областьDataGridViewTextBoxColumn.HeaderText = "Область";
             this.областьDataGridViewTextBoxColumn.Name = "областьDataGridViewTextBoxColumn";
+            this.областьDataGridViewTextBoxColumn.Visible = false;
             // 
             // Region
             // 
@@ -440,10 +439,10 @@ namespace AisOfTheRailwayStationDispatcherMy
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.районыibfk1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).EndInit();
             this.bindingNavigator2.ResumeLayout(false);
             this.bindingNavigator2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.районыibfk1BindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
