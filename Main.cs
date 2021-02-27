@@ -47,7 +47,7 @@ namespace AisOfTheRailwayStationDispatcherMy
         //маршруты
         private void button6_Click(object sender, EventArgs e)
         {
-
+            showWay();
         }
         //поезда
         private void button7_Click(object sender, EventArgs e)
@@ -102,6 +102,11 @@ namespace AisOfTheRailwayStationDispatcherMy
         {
             this.Hide();
             new Client().Show();
+        }
+        private void showWay()
+        {
+            this.Hide();
+            new Way().Show();
         }
     }
 }
