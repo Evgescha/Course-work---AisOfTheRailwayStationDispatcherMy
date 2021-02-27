@@ -22,12 +22,7 @@ namespace AisOfTheRailwayStationDispatcherMy
         //продажа билетов
         private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-        //списки маршрутов
-        private void button2_Click(object sender, EventArgs e)
-        {
-
+            showTicket();
         }
         //области
         private void button3_Click(object sender, EventArgs e)
@@ -107,6 +102,11 @@ namespace AisOfTheRailwayStationDispatcherMy
         {
             this.Hide();
             new Way().Show();
+        }
+        private void showTicket()
+        {
+            this.Hide();
+            new Ticket().Show();
         }
     }
 }

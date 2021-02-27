@@ -32,7 +32,6 @@ namespace AisOfTheRailwayStationDispatcherMy
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.менюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.продажаБбилетовToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.списокМаршрутовToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.справочникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.областиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.районыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,7 +43,6 @@ namespace AisOfTheRailwayStationDispatcherMy
             this.должностиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.пассажириToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button7 = new System.Windows.Forms.Button();
@@ -77,8 +75,7 @@ namespace AisOfTheRailwayStationDispatcherMy
             // менюToolStripMenuItem
             // 
             this.менюToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.продажаБбилетовToolStripMenuItem,
-            this.списокМаршрутовToolStripMenuItem});
+            this.продажаБбилетовToolStripMenuItem});
             this.менюToolStripMenuItem.Name = "менюToolStripMenuItem";
             this.менюToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.менюToolStripMenuItem.Text = "Меню";
@@ -86,14 +83,8 @@ namespace AisOfTheRailwayStationDispatcherMy
             // продажаБбилетовToolStripMenuItem
             // 
             this.продажаБбилетовToolStripMenuItem.Name = "продажаБбилетовToolStripMenuItem";
-            this.продажаБбилетовToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.продажаБбилетовToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.продажаБбилетовToolStripMenuItem.Text = "Продажа билетов";
-            // 
-            // списокМаршрутовToolStripMenuItem
-            // 
-            this.списокМаршрутовToolStripMenuItem.Name = "списокМаршрутовToolStripMenuItem";
-            this.списокМаршрутовToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.списокМаршрутовToolStripMenuItem.Text = "Список маршрутов";
             // 
             // справочникиToolStripMenuItem
             // 
@@ -170,7 +161,6 @@ namespace AisOfTheRailwayStationDispatcherMy
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Location = new System.Drawing.Point(12, 27);
             this.groupBox1.Name = "groupBox1";
@@ -179,23 +169,12 @@ namespace AisOfTheRailwayStationDispatcherMy
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Меню";
             // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(6, 107);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(187, 38);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Списки маршрутов";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(6, 19);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(187, 38);
+            this.button1.Size = new System.Drawing.Size(187, 223);
             this.button1.TabIndex = 0;
             this.button1.Text = "Продажа билетов";
             this.button1.UseVisualStyleBackColor = true;
@@ -291,7 +270,7 @@ namespace AisOfTheRailwayStationDispatcherMy
             this.button10.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.Location = new System.Drawing.Point(6, 160);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(187, 38);
+            this.button10.Size = new System.Drawing.Size(187, 82);
             this.button10.TabIndex = 5;
             this.button10.Text = "Пассажиры";
             this.button10.UseVisualStyleBackColor = true;
@@ -300,9 +279,9 @@ namespace AisOfTheRailwayStationDispatcherMy
             // button9
             // 
             this.button9.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(6, 63);
+            this.button9.Location = new System.Drawing.Point(6, 84);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(187, 38);
+            this.button9.Size = new System.Drawing.Size(187, 61);
             this.button9.TabIndex = 4;
             this.button9.Text = "Должности";
             this.button9.UseVisualStyleBackColor = true;
@@ -313,7 +292,7 @@ namespace AisOfTheRailwayStationDispatcherMy
             this.button8.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.Location = new System.Drawing.Point(6, 19);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(187, 38);
+            this.button8.Size = new System.Drawing.Size(187, 59);
             this.button8.TabIndex = 3;
             this.button8.Text = "Сотрудники";
             this.button8.UseVisualStyleBackColor = true;
@@ -346,7 +325,6 @@ namespace AisOfTheRailwayStationDispatcherMy
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem менюToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem продажаБбилетовToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem списокМаршрутовToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem справочникиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem областиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem районыToolStripMenuItem;
@@ -358,7 +336,6 @@ namespace AisOfTheRailwayStationDispatcherMy
         private System.Windows.Forms.ToolStripMenuItem должностиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem пассажириToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button7;
